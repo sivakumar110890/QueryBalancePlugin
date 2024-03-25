@@ -1,0 +1,17 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+	<soap:Body>
+		<man:QueryLoanInfoRequestMsg xmlns:man="http://www.huawei.com/bme/cbsinterface/manageloanmgr" xmlns:com="http://www.huawei.com/bme/cbsinterface/common" xmlns:loan="http://www.huawei.com/bme/cbsinterface/loan">
+			<RequestHeader>
+				<com:CommandId>QueryLoanInfoRequestMsg</com:CommandId>
+				<com:Version>1</com:Version>
+				<com:TransactionId>Null</com:TransactionId>
+				<com:SequenceId>1</com:SequenceId>
+				<com:RequestType>Event</com:RequestType>
+				<com:SerialNo>#SerialNo#</com:SerialNo>
+			</RequestHeader>
+			<QueryLoanInfoRequest>
+				<loan:SubscriberNo>#SubscriberNo#</loan:SubscriberNo>
+			</QueryLoanInfoRequest>
+		</man:QueryLoanInfoRequestMsg>
+	</soap:Body>
+</soap:Envelope>
